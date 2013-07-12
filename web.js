@@ -1,6 +1,8 @@
 var express = require('express');
 
 var app = express.createServer(express.logger());
+var Iconv = require('iconv').Iconv;
+var fs = require('fs');
 
 app.get('/', function(request, response) {
 	
